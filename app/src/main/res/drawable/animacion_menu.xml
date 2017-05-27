@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/pacman_menu1" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu2" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu3" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu4" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu5" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu6" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu7" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu8" android:duration="150" />
+    <item android:drawable="@drawable/pacman_menu9" android:duration="150" />
+</animation-list>

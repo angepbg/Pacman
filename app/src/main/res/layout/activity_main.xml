@@ -1,0 +1,553 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff000000"
+
+    android:visibility="visible"
+    android:id="@+id/LayoutMain"
+    >
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="12"
+        android:rowCount="20"
+        android:orientation="horizontal"
+        android:id="@+id/Grid"
+        android:background="#ff000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </GridLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Grid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:id="@+id/Frame_Generic"
+        android:background="#ff000000">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="165dp"
+            android:layout_height="27dp"
+            android:layout_gravity="right|top"
+            android:id="@+id/Linear2"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac6"
+                android:background="@drawable/left3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac5"
+                android:background="@drawable/left3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac4"
+                android:visibility="invisible"
+                android:background="@drawable/left3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac3"
+                android:background="@drawable/left3"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac2"
+                android:background="@drawable/left3"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pac1"
+                android:visibility="visible"
+                android:background="@drawable/left3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Linear1"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageScore"
+                android:background="@drawable/score"
+                android:visibility="visible"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/Point"
+                android:background="#ff000000"
+                android:textColor="#ffff100e"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:id="@+id/Linear3"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:visibility="visible"
+                android:background="@drawable/level1"
+                android:id="@+id/Linear_level"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btPause"
+                    android:visibility="visible"
+                    android:textColor="#ffffffff"
+                    android:background="@drawable/pause" />
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fruit1"
+                        android:visibility="visible"
+                        android:background="@drawable/shade_grapes"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fruit2"
+                        android:visibility="visible"
+                        android:background="@drawable/shade_apple"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fruit3"
+                        android:background="@drawable/shade_strawberry"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fruit4"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/shade_cherry"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btOk"
+        android:layout_marginBottom="191dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="@drawable/btok" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Next"
+        android:background="@drawable/next"
+        android:visibility="invisible"
+        android:layout_above="@+id/btOk" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/YouWin"
+        android:background="@drawable/youwin"
+        android:layout_alignTop="@+id/Next"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/YouLose"
+        android:layout_alignTop="@+id/Next"
+        android:background="@drawable/youlose"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animacion_win"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/btOk" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animacion_next"
+        android:layout_alignTop="@+id/btOk"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animacion_lose"
+        android:layout_alignTop="@+id/btOk"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_generic"
+        android:layout_below="@+id/animacion_next"
+        android:layout_gravity="center"
+        android:layout_alignRight="@+id/btOk"
+        android:layout_alignEnd="@+id/btOk"
+        android:visibility="invisible"
+        android:background="@drawable/btback" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FrameScore"
+        android:visibility="invisible"
+        android:background="#ff000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="visible"
+            android:background="@drawable/score_text" />
+
+        <Button
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBack"
+            android:layout_below="@+id/Next"
+            android:layout_alignRight="@+id/btExit"
+            android:layout_alignEnd="@+id/btExit"
+            android:layout_alignLeft="@+id/btExit"
+            android:layout_alignStart="@+id/btExit"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/btback" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/TextScore"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffffff"
+            android:background="#ff000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold|italic" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/LinearName"
+        android:visibility="invisible"
+        android:background="#ff000000"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/btText"
+                android:hint="Your name "
+                android:inputType="text"
+                android:visibility="visible"
+                android:editable="true"
+                android:enabled="true"
+                android:layout_gravity="center|left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/btPlay"
+                android:layout_weight="1"
+                android:textColor="#ffffffff"
+                android:textColorHint="#82808080" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/btStart"
+                android:layout_gravity="center"
+                android:layout_alignRight="@+id/btPlay"
+                android:layout_alignEnd="@+id/btPlay"
+                android:layout_alignLeft="@+id/btPlay"
+                android:layout_alignStart="@+id/btPlay"
+                android:layout_above="@+id/btOk"
+                android:layout_below="@+id/btScore"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:background="@drawable/btstart" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:focusableInTouchMode="false"
+        android:id="@+id/LinearMain"
+        android:visibility="visible"
+        android:background="#ff000000">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/TitleMenu"
+            android:visibility="visible"
+            android:layout_above="@+id/LinearMenu"
+            android:background="@drawable/pacman_title">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/pacman_title"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/LinearMenu"
+            android:layout_gravity="center"
+            android:layout_below="@+id/Next"
+            android:visibility="visible"
+            android:layout_alignBottom="@+id/btOk"
+            android:layout_weight="0.26">
+
+            <Button
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btPlay"
+                android:layout_gravity="center_horizontal"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/btScore"
+                android:visibility="visible"
+                android:background="@drawable/btplay"
+                android:singleLine="false" />
+
+            <Button
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btScore"
+                android:singleLine="false"
+                android:layout_alignLeft="@+id/btPlay"
+                android:layout_alignStart="@+id/btPlay"
+                android:layout_alignRight="@+id/btPlay"
+                android:layout_alignEnd="@+id/btPlay"
+                android:layout_above="@+id/btOk"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                android:background="@drawable/btscore" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btlevels"
+                android:background="@drawable/btleves" />
+
+            <Button
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btExit"
+                android:layout_alignRight="@+id/btPlay"
+                android:layout_alignEnd="@+id/btPlay"
+                android:layout_alignLeft="@+id/btPlay"
+                android:layout_alignStart="@+id/btPlay"
+                android:visibility="visible"
+                android:onClick="selfDestruct"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_above="@+id/btBack"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btexit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sonido"
+                android:visibility="visible"
+                android:background="@drawable/corneta" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_menu"
+            android:layout_below="@+id/LinearMenu"
+            android:visibility="visible"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/Frame_level"
+        android:background="#ff000000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_level"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/btback"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnivel1"
+                android:layout_gravity="left"
+                android:background="@drawable/nivel1"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnivel3"
+                android:layout_gravity="left"
+                android:background="@drawable/nivel3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnivel2"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:background="@drawable/nivel2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnivel4"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:background="@drawable/nivel4" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
